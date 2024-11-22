@@ -1,0 +1,195 @@
+
+@font-face {
+    font-family: Vazir;
+    src: url(../fonts/Vazir-Medium.woff);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Vazir !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+    padding: 15px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-out;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  input {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #111;
+    color: #fff;
+    width: 120px;
+    /* text-align: center; */
+    transition: border 0.3s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #fff;
+  }
+  
+  .fields {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    animation: slideDown 0.6s ease-out;
+  }
+  
+  .grade-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+  }
+  
+  .grade-field input {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    text-align: center;
+    background: #111;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .grade-field input:focus {
+    border-color: #fff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+  }
+  
+  .btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    color: #000;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #ccc;
+    transform: scale(1.05);
+  }
+  
+  .result {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 15px;
+    animation: bounceIn 0.8s ease-out;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+      max-width: 90%;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  
+    input {
+      width: 100px;
+    }
+  
+    .grade-field input {
+      width: 35px;
+      height: 35px;
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

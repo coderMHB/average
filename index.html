@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محاسبه معدل</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>محاسبه معدل</h1>
+    <div class="input-group">
+      <label for="grade-count">تعداد نمرات:</label>
+      <input type="number" dir="ltr" id="grade-count" min="1" placeholder="تعداد نمرات">
+    </div>
+    <button id="generate-fields" class="btn">ایجاد فیلدها</button>
+    <div id="grades-container" class="fields hidden"></div>
+    <button id="calculate-average" class="btn hidden">محاسبه معدل</button>
+    <div id="result" class="result hidden">
+        <span>معدل شما: </span><span id="average-value">0.0</span>
+    </div>
+  </div>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
